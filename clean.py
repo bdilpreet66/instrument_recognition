@@ -141,11 +141,9 @@ class AudioPreprocessor:
 if __name__ == '__main__':
     preprocessor = AudioPreprocessor(src_root='wavfiles', dst_root='clean', delta_time=1.0, sampling_rate=16000, threshold=20)
 
-    # Path to the audio file you want to test
-    #audio_file_path = 'wavfiles/Hi_hat/3a3d0279.wav'
-
     # Test and plot the envelope for the specified audio file
-    #preprocessor.plot_envelope(audio_file_path)
+    # audio_file_path = 'wavfiles/Hi_hat/3a3d0279.wav'
+    # preprocessor.plot_envelope(audio_file_path)
     
     # Clean the audio files
     preprocessor.process()
